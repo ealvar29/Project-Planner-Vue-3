@@ -2,13 +2,13 @@
   "projects": [
     {
       "id": 1,
-      "title": "Create new homepage banner",
+      "title": "Create Vue 3 CRUD Application",
       "details": "Lorem ipsum",
       "complete": false
     },
     {
       "id": 2,
-      "title": "Make marketing email",
+      "title": "Connect to Supabase DB",
       "details": "Lorem ipsum",
       "complete": true
     }

@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="EditProject">
+  <form @submit.prevent="handleSubmit">
         <label>Title:</label>
         <input required v-model="title" type="text" />
         <label>Details:</label>
@@ -19,7 +19,7 @@ export default {
     }
   },
   methods:{
-    EditProject() {
+    handleSubmit() {
       let project = {
         title: this.title,
         details: this.details
@@ -28,9 +28,6 @@ export default {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(project)
-      })
-      .then(() => {
-        this.$emit('complete', this.project.id)
       })
       .then(() => {
         this.$router.push('/')

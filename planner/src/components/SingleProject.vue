@@ -3,8 +3,10 @@
     <div class="actions">
       <h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
       <div class="icons">
+        <router-link :to="{ name: 'EditProject', params: { id: project.id}}">
+          <span class="material-icons">edit</span>
+        </router-link>
         <span @click="deleteProject" class="material-icons">delete</span>
-        <span class="material-icons">edit</span>
         <span @click="toggleComplete" class="material-icons tick">done</span>
       </div>
     </div>
@@ -43,8 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
-  .project {
+<style scoped>.project {
     margin: 20px auto;
     background: white;
     padding: 10px 20px;

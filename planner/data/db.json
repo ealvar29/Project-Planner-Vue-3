@@ -11,6 +11,18 @@
       "title": "Connect to Supabase DB",
       "details": "Lorem ipsum",
       "complete": false
+    },
+    {
+      "title": "testing title",
+      "details": "testing details",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "title": "design",
+      "details": "new design",
+      "complete": false,
+      "id": 5
     }
   ]
 }

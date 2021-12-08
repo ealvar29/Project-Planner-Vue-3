@@ -26,6 +26,7 @@ export default {
     methods: {
         updateFilter(filter){
             this.$emit('filterChange', filter)
+            console.log(filter)
         }
     }
 }
